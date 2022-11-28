@@ -14,17 +14,17 @@ body {
     font-family: baskerville-urw, serif;
 }
 
-/*styling for all sections, header and footer */
-section, header, footer {
+/*styling for all sections and header */
+section, header {
     width: 80%;
     max-width: 600px;
     margin:auto;
+    margin-bottom: 4rem;
 }
 
-/*styling for all sections and header */
-section, header {
-    margin-bottom: 4rem;
-
+footer p {
+    margin: auto;
+    background-color: rgb(146, 15, 15);
 }
 
 /*styling for all paragraph and the blockquote */
@@ -67,6 +67,10 @@ blockquote cite {
     color: #333333;
 }
 
+.leader {
+    text-transform: uppercase;
+}
+
 /* Styling links */
 
 a {
@@ -96,8 +100,6 @@ nav ul {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
-
-
 }
 
 nav ul li {
@@ -117,6 +119,28 @@ nav a:hover {
     transition: all 0.3s ease-in-out;
 }
 
+.gridimage {
+    display: grid;
+    column-gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+
+}
+.dark {
+    /*background:rgb(255, 0, 0); */
+    padding: 3rem 0;
+    margin-top: -3.5rem;
+
+}
+
+.light {
+    background: rgb(229, 160, 160);
+}
+/*
+.dark, h2 {
+    color: #f7f7f7;
+}
+/
 /* Styling table */
 table {
     margin:auto;
@@ -158,9 +182,56 @@ img {
     max-width: 100%;
 }
 
+hr {
+    margin: 100px 0;
+    height: 5px;
+    background-color: rgb(146, 15, 15);
+    color: rgb(146, 15, 15);
+    border: 0 none;
+
+}
 
 footer {
+    background: rgb(146, 15, 15);
     text-align: center;
-    font-size: 0.8rem;
-    padding-bottom: 4rem;
-}
+    font-size: 0.75rem;
+    color: #f7f7f7;
+    padding: 4em 0 3em 0
+    }
+    
+    footer p {
+    margin: .5em
+    }
+    
+    .connections{
+    position: relative;
+    margin: 0 auto;
+    }
+    .connections ul{
+    margin: 0;
+    padding: 0;
+    }
+    .connections li{
+    margin: 0 10px;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    }
+    .connections a:link{
+    border-bottom: none;
+    }
+    .connections img,
+    .connections svg{
+    border: none;
+    }
+    .connections a:hover img,
+    .connections a:hover svg{
+    border-bottom: none;}
+    .connections svg {
+    margin: 1em auto;}
+    .connections a:hover svg path {
+    fill: #D8C385;
+    transition: all 0.2s ease-in-out;}
+    footer .connections a:hover svg path {
+    fill: #D8C385;
+    transition: all 0.2s ease-in-out;}
